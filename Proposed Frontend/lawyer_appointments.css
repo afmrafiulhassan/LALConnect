@@ -1,0 +1,78 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #3d0066, #a94dff);
+  color: white;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
+  padding: 30px 20px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.sidebar h2 { font-size: 20px; margin-bottom: 30px; }
+.sidebar a { 
+  display: block; 
+  color: #fff; 
+  text-decoration: none; 
+  padding: 12px 10px; 
+  margin-bottom: 10px; 
+  border-radius: 6px; 
+  transition: background 0.3s; 
+}
+.sidebar a:hover, .sidebar a.active { background: rgba(255,255,255,0.1); }
+
+.main { flex: 1; display: flex; flex-direction: column; }
+
+header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px 40px; 
+  background: rgba(0,0,0,0.1); 
+  border-bottom: 1px solid rgba(255,255,255,0.1); 
+}
+.logo { font-size: 24px; font-weight: 700; }
+nav a { margin: 0 15px; font-weight: 500; color: #fff; }
+nav a:hover { text-decoration: underline; }
+
+.section { padding: 0 40px 40px; }
+.section h2 { font-size: 22px; margin-bottom: 15px; }
+table {
+  width: 100%; 
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  overflow: hidden;
+}
+th, td {
+  padding: 12px; 
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 14px;
+}
+th { background: rgba(255,255,255,0.1); }
+
+.form-inline { display: flex; gap: 10px; margin-bottom: 20px; }
+.form-inline input, .form-inline select, .form-inline button {
+  padding: 10px; border: none; border-radius: 6px;
+}
+.form-inline input, .form-inline select { flex: 1; }
+.form-inline button {
+  background: #c29fff; color: #2e004f; cursor: pointer; transition: background 0.3s;
+}
+.form-inline button:hover { background: #a47ff1; }
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  padding: 30px 20px;
+  background: rgba(0,0,0,0.1);
+}

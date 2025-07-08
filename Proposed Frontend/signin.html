@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">LALC CONNECT</div>
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="signin.html" class="active">LOGIN</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="form-section">
+      <h1>Login</h1>
+      <form action="login.php" method="post">
+        <div class="form-group">
+          <input type="text" name="username" placeholder="Username" required>
+
+          <input type="password" name="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="registration.html">Sign Up</a></p>
+      </form>
+    </div>
+
+    <div class="info-section">
+      <h1>Welcome Back</h1>
+      <p>Please log in using your valid credentials to manage appointments, handle cases, or book legal consultations.</p>
+      <div class="info-icons">
+        <div><strong>Email:</strong> <span>support@LALConnect.com</span></div>
+        <div><strong>Phone:</strong> <span>+123-456-7890</span></div>
+        <div><strong>Website:</strong> <span>LALConnect.com</span></div>
+        <div><strong>Location:</strong> <span>AIUB, Dhaka-Bangladesh</span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 LALC CONNECT. All rights reserved.
+  </footer>
+  
+</body>
+</html>

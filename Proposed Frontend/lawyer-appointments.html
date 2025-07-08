@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Lawyer Appointments</title>
+  <link rel="stylesheet" href="lawyer_appointments.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>Dashboard</h2>
+    <a href="dashboard-lawyer.html">Overview</a>
+    <a href="lawyer-appointments.html" class="active">My Appointments</a>
+    <a href="lawyer-cases.html">Cases Handled</a>
+    <a href="lawyer-payments.html">Earnings</a>
+    <a href="lawyer-reviews.html">Client Reviews</a>
+    <a href="logout.php">Logout</a>
+  </aside>
+
+  <div class="main">
+    <header>
+      <div class="logo">LALC CONNECT</div>
+      <nav>
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+      </nav>
+    </header>
+
+    <section class="section">
+      <h2>Today’s Appointments</h2>
+      <table>
+        <thead><tr><th>ID</th><th>Client</th><th>Date</th><th>Time</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td>A010</td><td>Alice Lee</td><td>2025‑05‑07</td><td>11:00 AM</td><td>Confirmed</td><td><a href="#">View</a></td></tr>
+          <tr><td>A011</td><td>Bob Khan</td><td>2025‑05‑07</td><td>02:00 PM</td><td>Pending</td><td><a href="#">Confirm</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      &copy; 2025 LALC CONNECT. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>

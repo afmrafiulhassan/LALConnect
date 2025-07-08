@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>My Cases</title>
+  <link rel="stylesheet" href="client-cases.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>Dashboard</h2>
+    <a href="dashboard-client.html">Overview</a>
+    <a href="client-appointments.html">My Appointments</a>
+    <a href="client-cases.html" class="active">My Cases</a>
+    <a href="client-payments.html">My Payments</a>
+    <a href="client-reviews.html">My Reviews</a>
+    <a href="logout.php">Logout</a>
+  </aside>
+
+  <div class="main">
+    <header>
+      <div class="logo">LALC CONNECT</div>
+      <nav>
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+      </nav>
+    </header>
+
+    <!-- Create New Case -->
+    <section class="section">
+      <h2>Open New Case</h2>
+      <form class="form-inline" action="create_case.php" method="post">
+        <select name="case_type" required>
+          <option value="">Case Type</option>
+          <option value="Criminal">Criminal</option>
+          <option value="Civil">Civil</option>
+          <option value="Family">Family</option>
+        </select>
+        <input type="text" name="description" placeholder="Short Description" required>
+        <select name="court_id" required>
+          <option value="">Select Court</option>
+          <option value="1">High Court</option>
+          <option value="2">District Court</option>
+        </select>
+        <button type="submit">Create</button>
+      </form>
+    </section>
+
+    <!-- List of Cases -->
+    <section class="section">
+      <h2>My Cases</h2>
+      <table>
+        <thead>
+          <tr><th>Case ID</th><th>Type</th><th>Status</th><th>Court</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>C100</td><td>Criminal</td><td>Ongoing</td><td>High Court</td></tr>
+          <tr><td>C101</td><td>Civil</td><td>Closed</td><td>District Court</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      &copy; 2025 LALC CONNECT. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>

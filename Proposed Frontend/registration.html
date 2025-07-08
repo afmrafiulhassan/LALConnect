@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">LALC CONNECT</div>
+    <nav>
+      <a href="home.html" class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="signin.html">LOGIN</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="form-section">
+      <h2>Fill the form</h2>
+      <form id="regForm" method="post" action="controller/registration.php">
+        <div class="form-group">
+          <select id="userType" name="user_type" required>
+            <option value="">Select User Type</option>
+            <option value="client">Client</option>
+            <option value="lawyer">Lawyer</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="first_name" placeholder="First Name" required>
+          <input type="text" name="last_name" placeholder="Last Name" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="date" name="dob" placeholder="Date of Birth" required>
+        </div>
+
+        <div class="form-group">
+          <input type="password" name="password" placeholder="Password" required>
+          <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        </div>
+
+        <div id="lawyerFields" class="hidden">
+          <div class="form-group">
+            <input type="text" name="bar_no" placeholder="Bar Registration Number">
+            <input type="text" name="specialization" placeholder="Specialization">
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+      </form>
+    </div>
+
+    <div class="info-section">
+      <h1>Registration</h1>
+      <p>Whether you have questions about our services, need support, or want to share your feedback, our dedicated team is here to assist you every step of the way.</p>
+      <div class="info-icons">
+        <div><strong>Email:</strong> <span>support@LALConnect.com</span></div>
+        <div><strong>Phone:</strong> <span>+123-456-7890</span></div>
+        <div><strong>Website:</strong> <span>LALConnect.com</span></div>
+        <div><strong>Location:</strong> <span>AIUB, Dhaka-Bangladesh</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="registration.js"></script>
+
+  <footer>
+    &copy; 2025 LALC CONNECT. All rights reserved.
+  </footer>
+  
+</body>
+</html>
